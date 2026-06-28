@@ -1,7 +1,6 @@
 let allMealsShow = document.getElementById('all-meals')
 let searchBtn = document.getElementById('search-btn')
 
-
 searchBtn.addEventListener('click' , getMealList)
 async function getMealList() {
     let getInput = document.getElementById("get-input").value.trim();
@@ -59,6 +58,5 @@ async function showRecipe(id) {
                 <p class="py-4">${recipe.strInstructions}</p>
             </div>
     `
-
     my_modal_3.showModal()
 }
